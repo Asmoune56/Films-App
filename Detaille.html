@@ -3,40 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Movies</title>
-    <link rel="stylesheet" href="style.css">
-   
+    <title>Document</title>
+    <link rel="stylesheet" href="detaile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
-    <header>
-        <h1>My Movies</h1>
-        <nav>
-            <a href="Hom.html">Home</a>
-            <a href="Movies.html">Movies</a>
-            <a href="Detaille.html">Ajouter</a>
-        </nav>
-    </header>
-    <div class="search-container">
-        <input type="text" id="search" placeholder="Search for movies...">
+  <header>
+   
+    <nav>
+        <a href="Hom.html">Home</a>
+        <a href="Movies.html">Movies</a>
+        <a href="Detaille.html">Details</a>
+        <button type="button" class="btn" style="background-color: coral;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-node-plus-fill" viewBox="0 0 16 16">
+            <path d="M11 13a5 5 0 1 0-4.975-5.5H4A1.5 1.5 0 0 0 2.5 6h-1A1.5 1.5 0 0 0 0 7.5v1A1.5 1.5 0 0 0 1.5 10h1A1.5 1.5 0 0 0 4 8.5h2.025A5 5 0 0 0 11 13m.5-7.5v2h2a.5.5 0 0 1 0 1h-2v2a.5.5 0 0 1-1 0v-2h-2a.5.5 0 0 1 0-1h2v-2a.5.5 0 0 1 1 0"/>
+          </svg> Add Film</button>
+    </nav>
+</header>
+    
+    <div class = "card-wrapper">
+        <div class = "card">
+          <!-- card left -->
+          <div class = "product-imgs">
+            <div class = "img-display">
+              <div class = "img-showcase">
+                <img src = "image/s-l400.jpg" alt = "shoe image">
+                <img src = "image/MV5BNzg2MzQ0MjAtNjQyZi00Y2I4LThkNjUtYWRkZWViNDc4MDIyXkEyXkFqcGc@._V1_.jpg" alt = "shoe image">
+                <img src = "image/MV5BZGJmNGY3ZDgtZmU0NC00NmE3LThkYmItYjM3NWZmNzE2N2ZlXkEyXkFqcGc@._V1_.jpg" alt = "shoe image">
+                <img src = "image/s-l400.jpg" alt = "shoe image">
+              </div>
+            </div>
+            <div class = "img-select">
+              <div class = "img-item">
+                <a href = "#" data-id = "1">
+                  <img src = "image/4565071.jpg" alt = "shoe image" id="filmimage">
+                </a>
+              </div>
+              <div class = "img-item">
+                <a href = "#" data-id = "2">
+                  <img src = "image/s-l400.jpg" alt = "shoe image"id="filmimage">
+                </a>
+              </div>
+              <div class = "img-item">
+                <a href = "#" data-id = "3">
+                  <img src = "image/s-l400.jpg" alt = "shoe image"id="filmimage">
+                </a>
+              </div>
+              <div class = "img-item">
+                <a href = "#" data-id = "4">
+                  <img src = "image/4565071.jpg" alt = "shoe image"id="filmimage">
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- card right -->
+          <div class="dsp">
+          <div class = "product-content">
+            <h2 class = "product-title" id="titleform">Avatar movie</h2>
+            <div class = "product-rating">
+              <i class = "fas fa-star"></i>
+              <i class = "fas fa-star"></i>
+              <i class = "fas fa-star"></i>
+              <i class = "fas fa-star"></i>
+              <i class = "fas fa-star-half-alt"></i>
+            </div>
+      
+            
+      
+            <div class = "product-detail" style="color: aliceblue;" id="Discription">
+              <h2>about this film: </h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa!</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</p>
+            </div>
+      
+            <div class = "purchase-info">
+              <button type = "button" class = "btn">
+                add film 
+              </button>
+              <button type = "button" class = "btn">Compare</button>
+            </div>
+          </div>
+        </div>
     </div>
-    <div class="movies" id="movie-list">
-        <div class="movie" data-title="The Lion King">
-            <img src="https://via.placeholder.com/150" alt="The Lion King">
-            <h3>The Lion King</h3>
-            <p>2019, Action, Comedy</p>
-        </div>
-        <div class="movie" data-title="Avatar">
-            <img src="https://via.placeholder.com/150" alt="Avatar">
-            <h3>Avatar</h3>
-            <p>2009, Sci-Fi, Adventure</p>
-        </div>
-        <div class="movie" data-title="Hobbs & Shaw">
-            <img src="https://via.placeholder.com/150" alt="Hobbs & Shaw">
-            <h3>Hobbs & Shaw</h3>
-            <p>2019, Action</p>
-        </div>
-    </div>
-
-
+    <script src="script.js"></script>
 </body>
 </html>
